@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,6 +18,10 @@ public class Member {
     private Long id;
 
     //@NotEmpty
+    /*
+    별도의 dto를 생성해서 valid적용
+    entity에다가 설정 X
+     */
     private String name;
 
     @Embedded
